@@ -32,6 +32,6 @@ app.get("/pokemon/:pokemonId", async (req, res) => {
         "sprite" : sprite,
         "description": description
     })  
-})
+}).catch((err) => {console.log(err.message)})
 
 app.listen('3001', () => {})

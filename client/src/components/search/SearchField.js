@@ -17,7 +17,8 @@ export default function SearchField() {
             .then(data => {
                 console.log(data)
                 setResultData(data)
-        })
+            })
+            .catch((err) => {console.log(err.message)})
     }
 
     return (
